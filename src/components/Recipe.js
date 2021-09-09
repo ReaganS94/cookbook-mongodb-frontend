@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import marked from "marked";
 import axios from "axios";
+import Loader from "react-loader-spinner";
 
 import "./Recipe.css";
 
@@ -25,8 +26,10 @@ export const Recipe = () => {
     getArticle();
   }, [_id]);
 
-  if (loading) return "Loading...";
+  if (loading)
+    return <Loader type="Oval" color="#00BFFF" height={80} width={80} />;
   const postDescription = marked(article.description);
+  console.log(article);
   return (
     <div className="posts" id="singlePost">
       <h2 className="title" id="recipeTitle">

@@ -1,5 +1,3 @@
-import Loader from "react-loader-spinner";
-
 import { Post } from "./Post";
 import "./Posts.css";
 

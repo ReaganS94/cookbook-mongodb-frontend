@@ -6,6 +6,9 @@ import { Recipe } from "./components/Recipe";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Main from "./components/Main";
+// import Editor from "./components/Editor";
+import Loader from "react-loader-spinner";
+
 import "./App.css";
 
 const baseUrl = "https://evening-escarpment-65430.herokuapp.com/recipes";
@@ -16,7 +19,7 @@ function App() {
 
   useEffect(() => {
     const getArticles = async () => {
-      axios
+      await axios
         .get(baseUrl)
         .then((response) => {
           setArticles(response.data.data);
@@ -27,6 +30,8 @@ function App() {
     getArticles();
   }, []);
 
+  if (loading)
+    return <Loader type="Oval" color="#00BFFF" height={80} width={80} />;
   return (
     <Router>
       <div className="App">
@@ -37,12 +42,12 @@ function App() {
             <Route exact path="/">
               <Posts posts={articles} />
             </Route>
-            <Route path="/recipe/:_id">
+            <Route path="/recipes/:_id">
               <Recipe />
             </Route>
           </Switch>
         </Main>
-
+        {/* <Editor /> */}
         <Footer />
       </div>
     </Router>
