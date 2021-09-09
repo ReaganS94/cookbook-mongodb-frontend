@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#singlePost {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+#recipeTitle {
+  margin-top: 1rem;
+}
+
+#recipeImage {
+  width: 40%;
+}
+
+#recipe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  color: #050a30;
+  font-family: "Playfair display";
+  line-height: 1.5em;
+  width: 100%;
+}
+
+#recipe h1 {
+  font-family: "Playfair display";
+  font-size: 1.7rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+#recipe ul {
+  list-style: none;
+  text-align: center;
+  margin-bottom: 2rem;
+  line-height: 2em;
+}
+
+#recipe h3 {
+  font-family: "Playfair display";
+  font-style: italic;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0.7rem auto;
+}
+
+#recipe p {
+  width: 60%;
+  font-family: "Playfair display";
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  text-align: center;
+}

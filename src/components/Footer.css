@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap");
+
+.footer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: #050a30;
+  color: #5eb6f9;
+  justify-content: center;
+  align-items: center;
+}
+
+.webName {
+  font-family: "Style script";
+  font-size: 2.7rem;
+  margin-top: 7px;
+}
+
+.subscribe {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  font-family: "Playfair display";
+  margin-top: 0;
+}
+
+.input {
+  margin-left: 0.5rem;
+  background-color: transparent;
+  border: 1px solid #5eb6f9;
+  color: gray;
+  width: 20%;
+  padding: 8px;
+}
+
+.logos {
+  width: 100%;
+  display: flex;
+  margin: 5px auto;
+  padding-bottom: 3px;
+  justify-content: center;
+  align-items: center;
+}
+
+.smLogo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0.2rem 0.6rem;
+    padding: 0.5%;
+    border: 1px solid #5eb6f9; 
+}
+
+.subscribe h5 {
+  font-size: 16px;
+}
